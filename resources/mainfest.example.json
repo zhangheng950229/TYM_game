@@ -1,0 +1,467 @@
+{
+    //游戏内可编辑元素的列表
+    "items": [    
+        {
+            //元素类型("text": 文本)
+            "type": "text",
+            //元素名称("game_name"为特定名称，此元素为必需项)
+            "key_name": "game_name",
+            //元素的值(文本，数字，颜色，图片/音频等文件资源的路径)
+            "key_value": "游戏名称",
+            //元素说明标题
+            "key_title": "游戏的名称",
+            //元素值的数据数量，默认为1 
+            "key_length": 1,
+            //元素说明详情           
+            "describe": "游戏的名称，显示在网页的标题栏",
+            //文本元素编辑时，输入框的默认提示（非必需项）
+            "placeholder": "标题栏",
+            //元素修改权限("user": 表示用户可修改；"admin": 表示只能兔有米平台管理员修改)
+            "group": "user",
+            //元素的key_value是否可编辑
+            //（只有设置此属性并且值为false时才视为不可编辑，
+            //  如果属性group的值为"admin",则此属性无效）
+            "valuable": true,            
+            //元素修改的限制条件，如果不限制则为空{}或""
+            "conditions": {
+                //必填项
+                "required": true,
+                //指文本/数字的可输入长度
+                "size": 20
+            },
+            //元素所属类别("game": 表示是游戏元素)
+            "area": "game"
+        },
+        {
+            //元素类型("object": 对象，包括Array,Json)
+            "type": "object",
+            //元素名称("score_level"为特定名称，此元素为必需项)
+            "key_name": "score_level",
+            //等级列表，没有等级则为空数组[]
+            "key_value": [
+                //"level": 等级分值；"desc": 等级描述
+                {"level":10, "desc": "10分以下显示的字"},
+                {"level":40, "desc": "40分以下显示的字"},
+                {"level":80, "desc": "80分以下显示的字"},
+                {"level":100, "desc": "超过80分显示的字"}
+            ],
+            "key_title": "分数级别",
+            //元素值的数据数量(等级数量，没有等级则为0)
+            "key_length": 4,
+            "describe": "显示分数级别的时候出现",
+            //元素修改权限(此元素默认为"admin"，不可被用户编辑)
+            "group": "admin",
+            "conditions":"",
+            "area":"game"
+        },        
+        {
+            //元素类型("image": 资源文件，包括image,txt,json,audio,fnt)
+            "type": "image",
+            //元素名称("logo"为特定名称，此元素为必需项)
+            "key_name": "logo",
+            "key_value": "http://cdn.tuyoumi.com/FE/img/loading/tuyoumi-logo.jpg",
+            "key_title": "TYMlogo",
+            "key_length": 1,
+            "describe": "TYMlogo",
+            "valuable": true,
+            "group": "user",
+            //元素修改的限制条件
+            "conditions": {
+                //允许上传的文件类型
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            //元素属性(如果此元素会出现在编辑器中，则必需具有此属性，且至少具有position子属性)
+            "attributes":{              
+                //元素位置
+                "position": {
+                    "x": 236,
+                    "y": 850,
+                    //是否只读，默认 true
+                    //true: 不可修改，编辑游戏时，元素位置固定；同时在游戏中不需要读取此数据来绘制界面
+                    //false: 可修改，编辑游戏时，元素位置不固定，可任意在场景内拖动；同时在游戏中需要读取此数据用以定位元素
+                    "readonly": true 
+                },
+                //元素尺寸(image,colorblock元素才具有此属性)
+                "size": {
+                    "width": 168,
+                    "height": 79,
+                    //是否只读，默认 true
+                    //true: 不可修改，编辑游戏时，元素尺寸固定；同时在游戏中不需要读取此数据来绘制界面
+                    //false: 可修改，编辑游戏时，元素尺寸不固定，可任意改变长度，宽度；同时在游戏中需要读取此数据用以确定元素尺寸                    
+                    "readonly": true
+                },
+                "other": {
+                    //元素具有广告属性(默认设置为link)
+                    //以下三个选择项，只能设置其中一个，并且可以只存在一个或以上的属性，其它的可去掉不要
+                    "advert": {
+                        //是否显示此元素
+                        //默认值为""，如果为"none"，则表示不显示此元素
+                        "display": "",
+                        //是否用一个二维码图片代码此元素
+                        //默认值为""，如果值为一个二维码图片URL，则界面中显示原始元素的位置将显示此二维码图片
+                        //另，只有图片元素才有此属性
+                        "qrcode": "",
+                        //是否给元素添加链接
+                        //如果存在此属性，则此属性为此广告元素的默认广告属性
+                        "link": "http://www.tuyoumi.com/?s=guanzhu"
+                    }
+                }                
+            },
+            "area": "game"
+        },
+        {
+            "type": "text",
+            //元素名称("loadtext"为特定名称，此元素为必需项)
+            "key_name": "loadtext",
+            "key_value": "游戏加载中...",
+            "key_title": "加载进度提示",
+            "key_length": 1,
+            "describe": "加载进度提示",
+             //元素修改权限(只有兔有米平台管理员能修改，如果元素出现在编辑器中，则只会显示，不能做任何修改)
+            "group": "admin",
+            "conditions": "",
+            "attributes": {
+                "position": {
+                    "x": 258,
+                    "y": 560,
+                    "readonly": true
+                },
+                //文字样式
+                "font": {
+                    //文字加粗
+                    "bold": true,
+                    ///斜体
+                    "italic": true,
+                    //下划线
+                    "underline": true,
+                    //文字排版（"lr": 左右排版，"tb": 上下排版, 默认左右）
+                    "writingMode": "lr",
+                    //文字对齐(默认居中)
+                    "textAlign": "center",
+                    //文字大小
+                    "fontSize": 14,
+                    //文字颜色(颜色可以用hex，argb方式表示)
+                    "fontColor": "#363636",
+                    //文字字体
+                    "fontFamily": "inherit",
+                    //文字描边宽度
+                    "stroke": 0,
+                    //文字描边颜色(颜色可以用hex，argb方式表示)
+                    "strokeColor": "00000000",                  
+                    "readonly": true
+                },
+                "other": {
+                    //元素具有广告属性(默认设置为link)
+                    "advert": {
+                        //是否显示此元素
+                        "display": "",
+                        //是否给元素添加链接
+                        "link": "http://www.tuyoumi.com/?s=guanzhu"
+                    },
+                    //元素旋转属性（以元素当前的中心点为旋转原点）
+                    "rotate": {
+                        //旋转角度
+                        "deg": 0,
+                        //此属性为元素无width/height属性时在编辑游戏中由编辑器设置，用以辅助设置元素的旋转
+                        //不需要开发者提供
+                        "width": 100,
+                        "height": 100,
+                        //是否只读，默认 true
+                        //true: 不可修改，编辑游戏时，此属性不可编辑；同时在游戏中不会读取此数据
+                        //false: 可修改，编辑游戏时，此属性可编辑；同时在游戏中会读取此数据用以确定元素的旋转配置
+                        "readonly": true
+                    }
+                }
+            },
+            "area": "game",
+        },        
+        {
+            "type": "image",
+            //元素名称("loading"为特定名称，此元素为必需项)
+            "key_name": "loading",
+            "key_value": "http://cdn.tuyoumi.com/FE/img/loading/tuyoumi-loading.gif",
+            "key_title": "loading图",
+            "key_length": 1,
+            "describe": "loading图",
+            "valuable": true,
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes":{
+                "position": {
+                    "x": 246,
+                    "y": 300,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 152,
+                    "height": 257,
+                    "readonly": true
+                }
+            },            
+            "area": "game"
+        },
+        {
+            //元素类型(数字)
+            "type": "number",
+            "key_name": "game_time",
+            "key_value": "45",
+            "key_title": "游戏时长",            
+            "key_length": 1,
+            "describe": "游戏中玩家的时间",
+            "valuable": true,
+            "group": "user",
+            //修改的限制条件(如果没有则为{}或"")
+            "conditions": {
+                //可输入编辑的元素可设置此项，表示是否必填
+                "required": true,
+                //最小值
+                "min": 25,
+                //最大值
+                "max": 100
+            },
+            "attributes":{
+                "font": {
+                    "fontSize": 20,
+                    "fontColor": "00000000",
+                    "fontFamily": "inherit",
+                    "stroke": 0,
+                    "strokeColor": "00000000",
+                    //文字样式可修改
+                    "readonly": false              
+                },
+                "position": {
+                    "x": 100,
+                    "y": 10,
+                    "readonly": true
+                },
+                "other": {
+                    //当前元素与其它元素的关联性
+                    "relevance": {
+                        //当前文本元素内（需要可编辑），可插入的其它编辑元素（可编辑或不可编辑）
+                        "from":["key_name"]
+                    }
+                }
+            },
+            "area": "game"
+        },
+        {
+            //元素类型(颜色，可用hex, argb表示法)
+            "type": "color",
+            "key_name": "bg_start",
+            "key_value": "#ff6600",
+            "key_title": "开始页背景颜色",
+            "key_length": 1,
+            "describe": "开始页背景颜色",
+            "valuable": true,
+            "group": "user",
+            "conditions": "",
+            "attributes":{
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 640,
+                    "height": 960,
+                    "readonly": true
+                },
+                "other": {
+                    //当前元素的显示/隐藏与此元素同步
+                    "visibleFollow": "gamerule",
+                }
+            },            
+            "area": "game"
+        },
+        {
+            "type": "text",
+            //元素名称("loadtext"为特定名称，此元素为必需项)
+            "key_name": "gamerule",
+            "key_value": "游戏玩法说明",
+            "key_title": "游戏玩法说明",
+            "key_length": 1,
+            "describe": "游戏玩法说明",
+            "valuable": true,
+            "group": "user",
+            "conditions": {
+                //文本元素可输入的最大长度
+                "size": 200,
+                //是否必填
+                "required": true
+            },
+            "attributes": {
+                "position": {
+                    "x": 258,
+                    "y": 560,
+                    "readonly": true
+                },
+                //文字样式
+                "font": {
+                    //文字大小
+                    "fontSize": 14,
+                    //文字颜色(颜色可以用hex，argb方式表示)
+                    "fontColor": "#363636",
+                    //文字字体
+                    "fontFamily": "inherit",
+                    //文字描边宽度
+                    "stroke": 0,
+                    //文字描边颜色(颜色可以用hex，argb方式表示)
+                    "strokeColor": "00000000",                  
+                    "readonly": false,
+                    //文本样式可编辑时，某些样式列为不可编辑的例外情况
+                    "ignore": "fontFamily,fontColor"
+                },
+                "other": {
+                    //元素是否显示
+                    "visible": true,
+                    //元素具有广告属性(默认设置为link)
+                    "advert": {
+                        //是否显示此元素
+                        "display": "",
+                        //是否给元素添加链接
+                        "link": "http://www.tuyoumi.com/?s=guanzhu"
+                    },
+                    //元素旋转属性（以元素当前的中心点为旋转原点）
+                    "rotate": {
+                        //旋转角度
+                        "deg": 0,
+                        //此属性为元素无width/height属性时在编辑游戏中由编辑器设置，用以辅助设置元素的旋转
+                        //不需要开发者提供
+                        "width": 100,
+                        "height": 100,
+                        //是否只读，默认 true
+                        //true: 不可修改，编辑游戏时，此属性不可编辑；同时在游戏中不会读取此数据
+                        //false: 可修改，编辑游戏时，此属性可编辑；同时在游戏中会读取此数据用以确定元素的旋转配置
+                        "readonly": true
+                    }
+                }
+            },
+            "area": "game",            
+        }
+        {   //此元素表示游戏是否可以关联抽奖（如果不设置此项，则默认可关联，否则由此项的值key_value确定）
+            //如果关联，即可以在编辑器内添加抽奖模块，也可以不添加，都不会对游戏造成影响；
+            //如果不关联，则不能添加抽奖模块
+            "type": "boolean",
+            "key_name": "hasLotteryModule",
+            //元素值
+            //1：关联抽奖；0：不关联抽奖
+            "key_value": 1,
+            "key_title": "是否含有抽奖功能",
+            "key_length": 1,
+            "describe": "是否含有抽奖功能",
+            "group": "admin",
+            "conditions": {
+                //抽奖条件自定义,如果元素值为0，则以下设置无效
+                "entity": {
+                    //可预设的活动说明
+                    "rules": {
+                        //抽奖说明
+                        "explain": "需要{awardScore}人帮忙才能进行抽奖，每天有{awardTimes}次抽奖机会。"
+                    },                    
+                    //可编辑抽奖条件表单项，不是所有的表单项都可编辑，
+                    //而且针对不同类型的游戏会开放不同的可编辑表单项
+                    "elements": [
+                        //抽奖分数
+                        //值类型：Number
+                        {
+                            "name": "awardScore",
+                            //表单项标题
+                            "title": "抽奖分数",
+                            //表单项的度量单位
+                            "unit": "分",
+                            //默认值，可选项
+                            "value": 6,
+                            //最小值，可选项
+                            "min": 6,
+                            //最大值，可选项
+                            "max": 10,
+                            //设置项提示语
+                            "placeholder": "玩家玩游戏得分不小于此值就可抽奖"
+                        },
+                        //抽奖概率是否有效
+                        //值类型：Boolean
+                        {
+                            "name": "validRate",
+                            "value": false,
+                            //表示设置项有效，但不可编辑
+                            "readonly": true
+                        },
+                        //每人每日可中奖次数
+                        //值类型：Number
+                        {
+                            "name": "dayMaxWin",
+                            //表单项标题
+                            "title": "每日可中",
+                            //表单项的度量单位
+                            "unit": "次",
+                            //默认值，可选项
+                            "value": 1,
+                            //最小值，可选项
+                            "min": 1
+                        },
+                        //每人累计可中奖次数
+                        //值类型：Number                       
+                        {
+                            "name": "maxWin",
+                            //表单项标题
+                            "title": "累计可中",
+                            //表单项的度量单位
+                            "unit": "次",
+                            //默认值，可选项
+                            "value": 1,
+                            //最小值，可选项
+                            "min": 1                    
+                        },                        
+                        //每人每日抽奖次数
+                        //值类型：Number
+                        {
+                            "name": "awardTimes",
+                            //表示设置项无效
+                            "disabled": true
+                        }
+                    ]
+                },
+                //奖项设置自定义
+                "awards": {
+                    //奖项数量限制
+                    "amount": {
+                        //最大值，默认值为10，只能小于等于10
+                        "max": 10
+                    }
+                }
+            },
+            "attributes": "",
+            "area": "game"
+        }
+    ],
+    //游戏场景，主要用于对接游戏编辑器以生成不同编辑场景让用户可以修改游戏元素
+    //场景数量由开发者自由把控（根据游戏场景及可修改元素在游戏中的分布情况来确定），场景排序必须按游戏进行的顺序排列
+    "scenes":[
+        {
+            //场景名称
+            "name": "loadingPage",
+            //场景说明
+            "description": "加载页面",
+            //此数组表示本场景下可编辑的元素，元素的显示层级与此列表排序相同，从左向右，层级越大(层级大的元素会遮挡住层级小的元素)
+            //以下元素必须是在Items内存在的元素
+            "keys": ["logo", "loadtext", "loading"]
+        },
+        {
+            "name": "startPage",
+            //场景说明
+            "description": "开始页",
+            //数组内的子数组表示一组相关联的元素(动画的帧或其它有相同属性的一组元素等，场景内只会显示此组关联元素的第一个元素)
+            "keys": ["bg_start", ["run_normal", "run_left", "run_right"], "game_play"]
+        }
+    ],
+    //游戏舞台属性
+    //游戏UI的设计尺寸或游戏开发时设定的默认尺寸
+    "stage":{
+        //舞台默认宽度
+        "width": 480,
+        //舞台默认高度
+        "height": 960
+    }
+}

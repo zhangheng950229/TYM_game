@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" type="text/css" href="game.css" />
+        <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="full-screen" content="true"/>
+        <meta name="screen-orientation" content="portrait"/>
+        <meta name="x5-fullscreen" content="true"/>
+        <meta name="360-fullscreen" content="true"/>
+    </head>
+
+<body>
+    <div style="position:relative;" id="gameDiv"></div>
+    <script type="text/javascript" src="https://res.fibodata.com/data/fibosdk.min.js"></script>
+    <script type="text/javascript" src="http://file.tuyoumi.com/ext/tuyoumi-sdk/sdk.js"></script>
+    <script type="text/javascript" src="game.js"></script>
+
+<script>
+
+var cdnRoot = '../';
+var document_class = "GameApp";
+var global_loading;
+
+//cdnRoot = (window.userConfig && window.userConfig.engine_js_path) ? 
+//    window.userConfig.engine_js_path.split('game.js')[0] : '../';
+
+tymsdk.loadConfig( startMyGame );
+
+function startMyGame( cfg ){
+
+    window.userConfig = cfg;
+
+    // 启动loading界面
+    global_loading = GameLoading();
+    global_loading.start();
+
+    // 初始化游戏资源、配置
+    initGameConfig( cfg );
+    TemplateUtils.init( template_config );
+
+    // 启动游戏
+    if ([].map && document.createElement("canvas").getContext) {
+        fiboSDK.init({
+            pfid: 'be_6eM2baqqd',
+            appid: 'uuid241544101004345'});
+        egret_h5.startGame();
+    }
+    else {
+        alert("不支持您当前的浏览器");
+    }
+}
+
+</script>
+
+</body>
+</html>

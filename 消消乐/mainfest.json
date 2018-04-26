@@ -1,0 +1,641 @@
+{
+    "items":[
+        {
+            "type": "file",
+            "key_name": "logo",
+            "key_value": "http://cdn.tuyoumi.com/FE/img/loading/tuyoumi-logo.jpg",
+            "key_title": "TYMlogo",
+            "key_length": 1,
+            "describe": "TYMlogo",
+            "group": "user",
+            "area": "game",
+            "constrains": "",
+            "attributes": {
+                "position": {
+                    "x": 236,
+                    "y": 850,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 168,
+                    "height": 79,
+                    "readonly": true
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "loading",
+            "key_value": "http://cdn.tuyoumi.com/FE/img/loading/tuyoumi-loading.gif",
+            "key_title": "loading图",
+            "key_length": 1,
+            "describe": "loading图",
+            "group": "user",
+            "area": "game",
+            "constrains": "",
+            "attributes": {
+                "position": {
+                    "x": 246,
+                    "y": 300,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 152,
+                    "height": 257,
+                    "readonly": true
+                }
+            }
+        },
+        {
+            "type": "text",
+            "key_name": "loadtext",
+            "key_value": "游戏加载中...",
+            "key_length": 1,            
+            "key_title": "加载进度",
+            "describe": "加载进度",
+            "group": "admin",
+            "area": "game",
+            "constrains": "",
+            "attributes": {
+                "position": {
+                    "x": 258,
+                    "y": 560,
+                    "readonly": true
+                },
+                "font": {
+                    "fontSize": 14,
+                    "fontColor": "#363636",
+                    "fontFamily": "",
+                    "readonly": true
+                }
+            }
+        },
+        {
+            "type": "text",
+            "key_name": "game_name",
+            "key_value": "消消乐",
+            "key_length": 1,
+            "key_title": "游戏名称",
+            "describe": "游戏名称",            
+            "group": "user",
+            "area": "game",
+            "conditions": {
+                "size": 10
+            }
+        },
+        {
+            "type": "text",
+            "key_name": "score_level",
+            "key_value": [{
+                "level": 500,
+                "desc": "鉴定结果：白银"
+            }, {
+                "level": 800,
+                "desc": "鉴定结果：黄金"
+            }, {
+                "level": 1000,
+                "desc": "鉴定结果：铂金"
+            }, {
+                "level": 1500,
+                "desc": "鉴定结果：钻石"
+            }, {
+                "level": 3000,
+                "desc": "鉴定结果：王者"
+            }],
+            "key_length": 5,
+            "key_title": "分数级别",
+            "describe": "显示分数级别的时候出现",
+            "group": "admin",
+            "area": "game",
+            "conditions": ""            
+        },
+        {
+            "type": "number",
+            "key_name": "gameTime",
+            "key_value": "60",
+            "key_title": "游戏时长(秒)",
+            "key_length": 1,
+            "describe": "游戏时长(秒)",
+            "group": "user",
+            "conditions": {
+                "size": 5
+            },
+            "attributes": {
+                "font": {
+                    "fontSize": 40,
+                    "fontColor": "16776960",
+                    "fontFamily": "",
+                    "stroke": 2,
+                    "strokeColor": "00000000",
+                    "readonly": false
+                },
+                "position": {
+                    "x": 310,
+                    "y": 573,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "startTitle",
+            "key_value": "assets/startTitle.png",
+            "key_length": 1,
+            "key_title": "游戏标题",
+            "describe": "游戏标题",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": {},
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "readonly": false
+                },
+                "size": {
+                    "width": 640,
+                    "height": 459,
+                    "readonly": false
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "startBtn",
+            "key_value": "assets/startBtn.png",
+            "key_length": 1,
+            "key_title": "开始按钮",
+            "describe": "开始按钮",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": {},
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 218,
+                    "y": 492,
+                    "readonly": false
+                },
+                "size": {
+                    "width": 203,
+                    "height": 204,
+                    "readonly": false
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "startBg",
+            "key_value": "assets/startBg.jpg",
+            "key_length": 1,
+            "key_title": "开始游戏背景",
+            "describe": "开始游戏背景",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": {},
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 640,
+                    "height": 1008,
+                    "readonly": true
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "gameBg",
+            "key_value": "assets/gameBg.jpg",
+            "key_length": 1,
+            "key_title": "游戏背景",
+            "describe": "游戏背景",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": {},
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 640,
+                    "height": 1008,
+                    "readonly": true
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "scoreBg",
+            "key_value": "assets/scoreBg.png",
+            "key_length": 1,
+            "key_title": "得分板背景",
+            "describe": "得分板背景",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": {},
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 143,
+                    "y": 0,
+                    "readonly": false
+                },
+                "size": {
+                    "width": 354,
+                    "height": 185,
+                    "readonly": false
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "playBg",
+            "key_value": "assets/playBg.png",
+            "key_length": 1,
+            "key_title": "7x7 矩形背景",
+            "describe": "7x7 矩形背景",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": {},
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 54,
+                    "y": 240,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 532,
+                    "height": 532,
+                    "readonly": true
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "progressBg",
+            "key_value": "assets/progressBg.png",
+            "key_length": 1,
+            "key_title": "进度条背景",
+            "describe": "进度条背景",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": {},
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 133,
+                    "y": 917,
+                    "readonly": false
+                },
+                "size": {
+                    "width": 374,
+                    "height": 101,
+                    "readonly": false
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "progressBar",
+            "key_value": "assets/progressBar.png",
+            "key_length": 1,
+            "key_title": "进度条",
+            "describe": "进度条",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": {},
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 154,
+                    "y": 932,
+                    "readonly": false
+                },
+                "size": {
+                    "width": 333,
+                    "height": 40,
+                    "readonly": false
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "item0",
+            "key_value": "assets/item0.png",
+            "key_length": 1,
+            "key_title": "消去物1",
+            "describe": "消去物1",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": {},
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 284,
+                    "y": 312,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 64,
+                    "height": 64,
+                    "readonly": true
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "item1",
+            "key_value": "assets/item1.png",
+            "key_length": 1,
+            "key_title": "消去物2",
+            "describe": "消去物2",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": {},
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 64,
+                    "height": 64,
+                    "readonly": true
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "item2",
+            "key_value": "assets/item2.png",
+            "key_length": 1,
+            "key_title": "消去物3",
+            "describe": "消去物3",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": {},
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 64,
+                    "height": 64,
+                    "readonly": true
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "item3",
+            "key_value": "assets/item3.png",
+            "key_length": 1,
+            "key_title": "消去物4",
+            "describe": "消去物4",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": {},
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 64,
+                    "height": 64,
+                    "readonly": true
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "item4",
+            "key_value": "assets/item4.png",
+            "key_length": 1,
+            "key_title": "消去物5",
+            "describe": "消去物5",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": {},
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 64,
+                    "height": 64,
+                    "readonly": true
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "rulePageBg",
+            "key_value": "assets/rulePageBg.jpg",
+            "key_length": 1,
+            "key_title": "游戏规则背景",
+            "describe": "游戏规则背景",
+            "group": "admin",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": {},
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 640,
+                    "height": 1008,
+                    "readonly": true
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "ruleBg",
+            "key_value": "assets/ruleBg.png",
+            "key_length": 1,
+            "key_title": "游戏玩法框",
+            "describe": "游戏玩法框",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": "",
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 66,
+                    "y": 194,
+                    "readonly": false
+                },
+                "size": {
+                    "width": 508,
+                    "height": 602,
+                    "readonly": false
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "ruleSureBtn",
+            "key_value": "assets/ruleSureBtn.png",
+            "key_length": 1,
+            "key_title": "开始按钮",
+            "describe": "开始按钮",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": "",
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 213,
+                    "y": 700,
+                    "readonly": false
+                },
+                "size": {
+                    "width": 214,
+                    "height": 70,
+                    "readonly": false
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "ruleImg",
+            "key_value": "assets/ruleImg.png",
+            "key_length": 1,
+            "key_title": "游戏玩法介绍",
+            "describe": "游戏玩法介绍",
+            "group": "user",
+            "uint": "",
+            "resource": "",
+            "area": "game",
+            "constrains": "",
+            "conditions": {
+                "accept": ".jpg, .jpeg, .png, .gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 95,
+                    "y": 327,
+                    "readonly": false
+                },
+                "size": {
+                    "width": 450,
+                    "height": 354,
+                    "readonly": false
+                }
+            }
+        }
+    ],
+    "scenes": [{
+        "name": "loadingPage",
+        "description": "加载页面",
+        "keys": ["logo", "loading", "loadtext"]
+    },
+    {
+        "name": "startPage",
+        "description": "开始页",
+        "keys": ["startBg", "startTitle", "startBtn"]
+    },
+    {
+        "name": "rulePage",
+        "description": "游戏规则页",
+        "keys": ["rulePageBg", "ruleBg", "ruleImg", "ruleSureBtn"]
+    },
+    {
+        "name": "playingPage",
+        "description": "游戏进行页",
+        "keys": ["gameBg", "scoreBg", "playBg", "progressBg", "progressBar", ["item0", "item1", "item2", "item3", "item4"], "gameTime"]
+    }],
+    "stage": {
+        "width": 640,
+        "height": 1008
+    }
+}

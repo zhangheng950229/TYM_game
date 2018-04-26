@@ -1,0 +1,131 @@
+{
+    "items":[
+        {
+            "type": "file",
+            "key_name": "logo",
+            "key_value": "http://cdn.tuyoumi.com/FE/img/loading/tuyoumi-logo.jpg",
+            "key_title": "TYMlogo",
+            "key_length": 1,
+            "describe": "TYMlogo",
+            "valuable": true,
+            "group": "user",
+            "area": "game",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 236,
+                    "y": 850,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 168,
+                    "height": 79,
+                    "readonly": true
+                }
+            }
+        },
+        {
+            "type": "file",
+            "key_name": "loading",
+            "key_value": "http://cdn.tuyoumi.com/FE/img/loading/tuyoumi-loading.gif",
+            "key_title": "loading图",
+            "key_length": 1,
+            "describe": "loading图",
+            "valuable": true,
+            "group": "user",
+            "area": "game",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 246,
+                    "y": 300,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 152,
+                    "height": 257,
+                    "readonly": true
+                }
+            }
+        },
+        {
+            "type": "text",
+            "key_name": "loadtext",
+            "key_value": "游戏加载中...",
+            "key_length": 1,            
+            "key_title": "加载进度",
+            "describe": "加载进度",
+            "group": "admin",
+            "area": "game",
+            "conditions": {
+                "size": 20
+            },
+            "attributes": {
+                "position": {
+                    "x": 258,
+                    "y": 560,
+                    "readonly": true
+                },
+                "font": {
+                    "fontSize": 14,
+                    "fontColor": "#363636",
+                    "fontFamily": "",
+                    "readonly": true
+                }
+            }
+        },
+        {
+            "type": "text",
+            "key_name": "game_name",
+            "key_value": "游戏名称",
+            "key_length": 1,
+            "key_title": "游戏名称",
+            "describe": "游戏名称",
+            "valuable": true,            
+            "group": "user",
+            "area": "game",
+            "conditions": {
+                "size": 10
+            }
+        },
+        {
+            "type": "text",
+            "key_name": "score_level",
+            "key_value": [
+                    {"level":30, "desc": "游戏等级1"},
+                    {"level":60, "desc": "游戏等级2"},
+                    {"level":90, "desc": "游戏等级3"},
+                    {"level":150, "desc": "游戏等级4"}
+            ],
+            "key_length": 4,
+            "key_title": "分数级别",
+            "describe": "显示分数级别的时候出现",
+            "group": "admin",
+            "area": "game",
+            "conditions": ""            
+        }
+    ],
+    "scenes": [{
+        "name": "loadingPage",
+        "description": "加载页面",
+        "keys": ["logo", "loading", "loadtext"]
+    },
+    {
+        "name": "startPage",
+        "description": "开始页",
+        "keys": []
+    },
+    {
+        "name": "playingPage",
+        "description": "游戏进行页",
+        "keys": []
+    }],
+    "stage": {
+        "width": 480,
+        "height": 800
+    }
+}

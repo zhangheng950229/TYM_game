@@ -1,0 +1,525 @@
+{
+    "items": [
+        {
+            "type": "text",
+            "key_name": "game_name",
+            "key_value": "吃萝卜",
+            "key_title": "游戏的名称",
+            "key_length": 1,
+            "describe": "游戏的名称，显示在网页的标题栏",
+            "group": "user",
+            "conditions": {
+                "size": 20
+            },
+            "area": "game"
+        },
+        {
+            "type": "text",
+            "key_name": "loadtext",
+            "key_value": "游戏加载中...",
+            "key_title": "加载的提示",
+            "key_length": 1,
+            "describe": "加载进度提示",
+            "group": "user",
+            "constrains": "",
+            "attributes": {
+                "position": {
+                    "x": 258,
+                    "y": 560,
+                    "readonly": true
+                },
+                "font": {
+                    "fontSize": 14,
+                    "fontColor": "#363636",
+                    "fontFamily": "inherit",
+                    "stroke": 0,
+                    "strokeColor": "00000000",
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "text",
+            "key_name": "game_time",
+            "key_value": "20'00''",
+            "key_title": "游戏的时长",
+            "key_length": 1,
+            "describe": "游戏的时长",
+            "group": "admin",
+            "constrains": "",
+            "attributes": {
+                "position": {
+                    "x": 280,
+                    "y": 25,
+                    "readonly": true
+                },
+                "font": {
+                    "fontSize": 60,
+                    "fontColor": "#FFFFFF",
+                    "fontWeight": "bold",
+                    "fontFamily": "inherit",
+                    "stroke": 0,
+                    "strokeColor": "00000000",
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "logo",
+            "key_value": "http://cdn.tuyoumi.com/FE/img/loading/tuyoumi-logo.jpg",
+            "key_title": "TYMlogo",
+            "key_length": 1,
+            "describe": "TYMlogo",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 236,
+                    "y": 850,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 168,
+                    "height": 79,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "loading",
+            "key_value": "http://cdn.tuyoumi.com/FE/img/loading/tuyoumi-loading.gif",
+            "key_title": "loading图",
+            "key_length": 1,
+            "describe": "loading图",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 246,
+                    "y": 300,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 152,
+                    "height": 257,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "start_bg",
+            "key_value": "assets/start_bg.png",
+            "key_title": "开始背景",
+            "key_length": 1,
+            "describe": "开始背景",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 640,
+                    "height": 1008,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "game_bg",
+            "key_value": "assets/game_bg.png",
+            "key_title": "游戏背景",
+            "key_length": 1,
+            "describe": "游戏背景",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 640,
+                    "height": 1008,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "game_logo",
+            "key_value": "assets/logo.png",
+            "key_title": "游戏标题",
+            "key_length": 1,
+            "describe": "游戏标题",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 64,
+                    "y": 50,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 512,
+                    "height": 480,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "btn",
+            "key_value": "assets/btn.png",
+            "key_title": "开始按钮",
+            "key_length": 1,
+            "describe": "开始按钮",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 144,
+                    "y": 700,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 343,
+                    "height": 110,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "timer",
+            "key_value": "assets/timer.png",
+            "key_title": "计时器背景",
+            "key_length": 1,
+            "describe": "计时器背景",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 640,
+                    "height": 192,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "border",
+            "key_value": "assets/border.png",
+            "key_title": "边框",
+            "key_length": 1,
+            "describe": "边框",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 320,
+                    "y": 528,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 160,
+                    "height": 160,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "carrot_good",
+            "key_value": "assets/carrot_good.png",
+            "key_title": "没吃的萝卜",
+            "key_length": 1,
+            "describe": "没吃的萝卜",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 340,
+                    "y": 528,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 120,
+                    "height": 160,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "carrot_bad",
+            "key_value": "assets/carrot_bad.png",
+            "key_title": "吃了的萝卜",
+            "key_length": 1,
+            "describe": "吃了的萝卜",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 340,
+                    "y": 528,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 120,
+                    "height": 160,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "mask_bg",
+            "key_value": "assets/mask_bg.jpg",
+            "key_title": "玩法遮罩层",
+            "key_length": 1,
+            "describe": "玩法遮罩层",
+            "group": "admin",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 640,
+                    "height": 1008,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "mask_gameBg",
+            "key_value": "assets/mask_gameBg.png",
+            "key_title": "玩法遮罩层",
+            "key_length": 1,
+            "describe": "玩法遮罩层",
+            "group": "admin",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 640,
+                    "height": 1008,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "rule_bg",
+            "key_value": "assets/rule_bg.png",
+            "key_title": "玩法弹框背景",
+            "key_length": 1,
+            "describe": "玩法弹框背景",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 48,
+                    "y": 188,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 544,
+                    "height": 632,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "rule_content",
+            "key_value": "assets/rule_content.png",
+            "key_title": "玩法内容",
+            "key_length": 1,
+            "describe": "玩法内容",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 88,
+                    "y": 318,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 464,
+                    "height": 372,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "file",
+            "key_name": "rule_btn",
+            "key_value": "assets/rule_btn.png",
+            "key_title": "玩法开始按钮",
+            "key_length": 1,
+            "describe": "玩法开始按钮",
+            "group": "user",
+            "conditions": {
+                "accept": ".jpg,.jpeg,.png,.gif"
+            },
+            "attributes": {
+                "position": {
+                    "x": 212,
+                    "y": 702,
+                    "readonly": true
+                },
+                "size": {
+                    "width": 216,
+                    "height": 66,
+                    "readonly": true
+                }
+            },
+            "area": "game"
+        },
+        {
+            "type": "object",
+            "key_name": "score_level",
+            "key_value": [
+                {
+                    "level": 10,
+                    "desc": "手残党"
+                },
+                {
+                    "level": 20,
+                    "desc": "战五渣"
+                },
+                {
+                    "level": 50,
+                    "desc": "哎呦不错"
+                },
+                {
+                    "level": 70,
+                    "desc": "手速惊人"
+                },
+                {
+                    "level": 100,
+                    "desc": "无敌手速"
+                }
+            ],
+            "key_length": 5,
+            "key_title": "分数级别",
+            "describe": "显示分数级别的时候出现",
+            "group": "admin",
+            "conditions": "",
+            "area": "game"
+        }
+    ],
+    "scenes": [
+        {
+            "name": "loadingPage",
+            "description": "加载页面",
+            "keys": [
+                "logo",
+                "loadtext",
+                "loading"
+            ]
+        },
+        {
+            "name": "startPage",
+            "description": "开始页面",
+            "keys": [
+                "start_bg",
+                "game_logo",
+                "btn"
+            ]
+        },
+        {
+            "name": "rulePage",
+            "description": "玩法页面",
+            "keys": [
+                "mask_bg",
+                "rule_bg",
+                "rule_content",
+                "rule_btn"
+            ]
+        },
+        {
+            "name": "playingPage",
+            "description": "游戏页面",
+            "keys": [
+                "game_bg",
+                "border",
+                [
+                    "carrot_good",
+                    "carrot_bad"
+                ],
+                "timer",
+                "game_time"
+            ]
+        }
+    ],
+    "stage": {
+        "width": 640,
+        "height": 1008
+    }
+}

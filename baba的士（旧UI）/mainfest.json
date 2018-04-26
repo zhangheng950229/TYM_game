@@ -1,0 +1,429 @@
+{
+    "items": [{
+        "type": "file",
+        "key_name": "logo",
+        "key_value": "http://cdn.tuyoumi.com/FE/img/loading/tuyoumi-logo.jpg",
+        "key_title": "TYMlogo",
+        "key_length": 1,
+        "describe": "TYMlogo",
+        "group": "user",
+        "uint": "",
+        "resource": "",
+        "area": "game",
+        "constrains": "",
+        "attributes": {
+            "position": {
+                "x": 236,
+                "y": 850,
+                "readonly": true
+            },
+            "size": {
+                "width": 168,
+                "height": 79,
+                "readonly": true
+            }
+        }
+    },
+    {
+        "type": "file",
+        "key_name": "loading",
+        "key_value": "http://cdn.tuyoumi.com/FE/img/loading/tuyoumi-loading.gif",
+        "key_title": "loading图",
+        "key_length": 1,
+        "describe": "loading图",
+        "group": "user",
+        "uint": "",
+        "resource": "",
+        "area": "game",
+        "constrains": "",
+        "attributes": {
+            "position": {
+                "x": 246,
+                "y": 300,
+                "readonly": true
+            },
+            "size": {
+                "width": 152,
+                "height": 257,
+                "readonly": true
+            }
+        }
+    },
+    {
+        "type": "text",
+        "key_name": "loadtext",
+        "key_value": "游戏加载中...",
+        "key_title": "加载进度",
+        "key_length": 1,
+        "describe": "加载进度",
+        "group": "admin",
+        "uint": "",
+        "resource": "",
+        "area": "game",
+        "constrains": "",
+        "attributes": {
+            "position": {
+                "x": 258,
+                "y": 560,
+                "readonly": true
+            },
+            "font": {
+                "fontSize": 14,
+                "fontColor": "#363636",
+                "fontFamily": "",
+                "readonly": true
+            }
+        }
+    },
+    {
+        "type": "text",
+        "key_name": "game_name",
+        "key_value": "baba的士",
+        "key_length": 1,
+        "describe": "游戏名称",
+        "key_title": "游戏名称",
+        "group": "user",
+        "conditions": {
+            "size": 10
+        },
+        "resource": "",
+        "area": "game"
+    },
+    {
+        "type": "text",
+        "key_name": "score_level",
+        "key_value": [],
+        "key_length": 0,
+        "key_title": "分数级别",
+        "describe": "显示分数级别的时候出现",
+        "group": "admin",
+        "conditions": "",
+        "resource": "",
+        "area": "game"
+    },
+    {
+        "type": "file",
+        "key_name": "gameStartBg",
+        "key_value": "assets/gameStart.png",
+        "key_length": 1,
+        "key_title": "游戏开始页背景",
+        "describe": "游戏开始页背景",
+        "group": "user",
+        "uint": "",
+        "resource": "",
+        "area": "game",
+        "constrains": "",
+        "attributes": {
+            "position": {
+                "x": 0,
+                "y": 0,
+                "readonly": true
+            },
+            "size": {
+                "width": 480,
+                "height": 800,
+                "readonly": true
+            }
+        }
+    },
+    {
+        "type": "file",
+        "key_name": "titleImg",
+        "key_value": "assets/titleImg.png",
+        "key_length": 1,
+        "key_title": "游戏标题",
+        "describe": "游戏标题图片",
+        "group": "user",
+        "uint": "",
+        "resource": "",
+        "area": "game",
+        "constrains": "",
+        "attributes": {
+            "position": {
+                "x": 0,
+                "y": 30,
+                "readonly": false
+            },
+            "size": {
+                "width": 480,
+                "height": 417,
+                "readonly": false
+            }
+        }
+    },
+    {
+        "type": "file",
+        "key_name": "gameBg",
+        "key_value": "assets/bg.png",
+        "key_length": 1,
+        "key_title": "游戏进行时背景",
+        "describe": "游戏进行时背景",
+        "group": "user",
+        "uint": "",
+        "resource": "",
+        "area": "game",
+        "constrains": "",
+        "attributes": {
+            "position": {
+                "x": 0,
+                "y": 0,
+                "readonly": true
+            },
+            "size": {
+                "width": 591,
+                "height": 800,
+                "readonly": true
+            }
+        }
+    },
+    {
+        "type": "file",
+        "key_name": "role_stand",
+        "key_value": "assets/role_stand.png",
+        "key_length": 1,
+        "key_title": "游戏人物角色",
+        "describe": "游戏人物角色",
+        "group": "user",
+        "uint": "",
+        "resource": "",
+        "area": "game",
+        "constrains": "",
+        "attributes": {
+            "position": {
+                "x": 100,
+                "y": 507,
+                "readonly": true
+            },
+            "size": {
+                "width": 71,
+                "height": 76,
+                "readonly": false
+            }
+        }
+    },
+    {
+        "type": "file",
+        "key_name": "block1",
+        "key_value": "assets/block1.png",
+        "key_length": 1,
+        "key_title": "窄柱子",
+        "describe": "窄柱子",
+        "group": "user",
+        "uint": "",
+        "resource": "",
+        "area": "game",
+        "constrains": "",
+        "attributes": {
+            "position": {
+                "x": 270,
+                "y": 593,
+                "readonly": true
+            },
+            "size": {
+                "width": 61,
+                "height": 207,
+                "readonly": true
+            }
+        }
+    },
+    {
+        "type": "file",
+        "key_name": "block2",
+        "key_value": "assets/block2.png",
+        "key_length": 1,
+        "key_title": "中柱子",
+        "describe": "中柱子",
+        "group": "user",
+        "uint": "",
+        "resource": "",
+        "area": "game",
+        "constrains": "",
+        "attributes": {
+            "position": {
+                "x": 360,
+                "y": 593,
+                "readonly": true
+            },
+            "size": {
+                "width": 82,
+                "height": 207,
+                "readonly": true
+            }
+        }
+    },
+    {
+        "type": "file",
+        "key_name": "block3",
+        "key_value": "assets/block3.png",
+        "key_length": 1,
+        "key_title": "宽柱子",
+        "describe": "宽柱子",
+        "group": "user",
+        "uint": "",
+        "resource": "",
+        "area": "game",
+        "constrains": "",
+        "attributes": {
+            "position": {
+                "x": 0,
+                "y": 593,
+                "readonly": true
+            },
+            "size": {
+                "width": 106,
+                "height": 207,
+                "readonly": true
+            }
+        }
+    },
+    {
+        "type": "file",
+        "key_name": "gun",
+        "key_value": "assets/gun.png",
+        "key_length": 1,
+        "key_title": "棍子",
+        "describe": "木棍",
+        "group": "admin",
+        "uint": "",
+        "resource": "",
+        "area": "game",
+        "constrains": "",
+        "attributes": {
+            "position": {
+                "x": 96,
+                "y": 588,
+                "readonly": true
+            },
+            "size": {
+                "width": 189,
+                "height": 11,
+                "readonly": true
+            }
+        }
+    },
+    {
+        "type": "file",
+        "key_name": "startButton",
+        "key_value": "assets/startButton.png",
+        "key_length": 1,
+        "key_title": "开始游戏按钮",
+        "describe": "开始游戏按钮",
+        "group": "user",
+        "uint": "",
+        "resource": "",
+        "area": "game",
+        "constrains": "",
+        "attributes": {
+            "position": {
+                "x": 160,
+                "y": 370,
+                "readonly": false
+            },
+            "size": {
+                "width": 160,
+                "height": 160,
+                "readonly": false
+            }
+        }
+    },
+    {
+        "type": "text",
+        "key_name": "gameRule",
+        "key_value": "按住屏幕，伸长木板\n长度不能过长，也不能太短哦！",
+        "key_title": "游戏玩法",
+        "key_length": 1,
+        "describe": "游戏玩法，显示在游戏开始的时候",
+        "group": "user",
+        "conditions": {
+            "size": 32
+        },
+        "attributes": {
+            "font": {
+                "fontSize": 20,
+                "fontColor": "16750848",
+                "stroke": 0,
+                "strokeColor": "16777215",
+                "readonly": false,
+                "ignore": ""
+            },
+            "position": {
+                "x": 28,
+                "y": 200,
+                "readonly": false
+            }
+        },
+        "area": "game"
+    },
+    {
+        "type": "number",
+        "key_name": "num",
+        "key_value": "1",
+        "key_title": "游戏玩法",
+        "key_length": 1,
+        "describe": "游戏玩法，显示在游戏开始的时候",
+        "group": "user",
+        "conditions": {
+            "min": 1,
+            "max": 5
+        },
+        "attributes": "",
+        "area": "game"
+    },    
+    {
+        "type": "text",
+        "key_name": "gameRule2",
+        "key_value": "按住屏幕，伸长木板\n长度不能过长，也不能太短哦！",
+        "key_title": "游戏玩法",
+        "key_length": 1,
+        "describe": "游戏玩法，显示在游戏开始的时候",
+        "group": "user",
+        "conditions": {
+            "size": 32
+        },
+        "attributes": {
+            "font": {
+                "bold": true,
+                "italic": true,
+                "underline": true,
+                "writingMode": "tb",
+                "fontFamily": "宋体",
+                "fontSize": 30,
+                "fontColor": "16750848",
+                "stroke": 0,
+                "strokeColor": "16777215",
+                "readonly": false,
+                "ignore": ""
+            },
+            "position": {
+                "x": 28,
+                "y": 500,
+                "readonly": false
+            },
+            "other": {
+                "relevance": {
+                    "from":["gameRule"]
+                }                
+            }
+        },
+        "area": "game"
+    }],
+    "scenes": [{
+        "name": "loadingPage",
+        "description": "加载页面",
+        "keys": ["logo", "loading", "loadtext"]
+    },
+    {
+        "name": "startPage",
+        "description": "开始页",
+        "keys": ["gameStartBg", "titleImg", "startButton"]
+    },
+    {
+        "name": "playingPage",
+        "description": "游戏进行页",
+        "keys": ["gameBg", ["block3", "block2", "block1"], "gun", "role_stand", "gameRule", "gameRule2", "num"]
+    }],
+    "stage": {
+        "width": 480,
+        "height": 800
+    }
+}

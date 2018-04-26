@@ -1,0 +1,416 @@
+{
+	"items": [{
+		"type": "file",
+		"key_name": "logo",
+		"key_value": "http://cdn.tuyoumi.com/FE/img/loading/tuyoumi-logo.jpg",
+		"key_title": "TYMlogo",
+		"key_length": 1,
+		"describe": "TYMlogo",
+		"group": "user",
+		"uint": "",
+		"resource": "",
+		"area": "game",
+		"constrains": "",
+		"attributes": {
+			"position": {
+				"x": 236,
+				"y": 850,
+				"readonly": true
+			},
+			"size": {
+				"width": 168,
+				"height": 79,
+				"readonly": true
+			}
+		}
+	},
+	{
+		"type": "file",
+		"key_name": "loading",
+		"key_value": "http://cdn.tuyoumi.com/FE/img/loading/tuyoumi-loading.gif",
+		"key_title": "loading图",
+		"key_length": 1,
+		"describe": "loading图",
+		"group": "user",
+		"uint": "",
+		"resource": "",
+		"area": "game",
+		"constrains": "",
+		"attributes": {
+			"position": {
+				"x": 246,
+				"y": 300,
+				"readonly": true
+			},
+			"size": {
+				"width": 152,
+				"height": 257,
+				"readonly": true
+			}
+		}
+	},
+	{
+		"type": "text",
+		"key_name": "loadtext",
+		"key_value": "游戏加载中...",
+		"key_title": "加载进度",
+		"key_length": 1,
+		"describe": "加载进度",
+		"group": "admin",
+		"uint": "",
+		"resource": "",
+		"area": "game",
+		"constrains": "",
+		"attributes": {
+			"position": {
+				"x": 258,
+				"y": 560,
+				"readonly": true
+			},
+			"font": {
+				"fontSize": 14,
+				"fontColor": "#363636",
+				"fontFamily": "",
+				"readonly": true
+			}
+		}
+	},
+	{
+		"type": "text",
+		"key_name": "game_name",
+		"key_value": "奥运赛跑",
+		"key_length": 1,
+		"describe": "游戏标题",
+		"key_title": "游戏标题",
+		"group": "user",
+		"conditions": {
+			"size": 10
+		},
+		"resource": "",
+		"area": "game"
+	},
+	{
+		"type": "file",
+		"key_name": "playBtn",
+		"key_value": "assets/playBtn.png",
+		"key_length": 1,
+		"key_title": "开始游戏按钮图",
+		"describe": "开始游戏按钮图",
+		"group": "user",
+		"resource": "",
+		"conditions": {
+			"accept": ".jpg, .jpeg, .png, .gif"
+		},
+		"attributes":{
+			"position": {
+				"x": 180,
+				"y": 414,
+				"readonly": false 
+			},
+			"size": {
+				"width": 120,
+				"height": 119,
+				"readonly": false
+			}
+		},
+		"area": "game"
+	},
+	{
+		"type": "file",
+		"key_name": "gameTitle",
+		"key_value": "assets/gameTitle.png",
+		"key_length": 1,
+		"key_title": "游戏标题",
+		"describe": "游戏标题",
+		"group": "user",
+		"resource": "",
+		"conditions": {
+			"accept": ".jpg, .jpeg, .png, .gif"
+		},
+		"attributes":{
+			"position": {
+				"x": 54,
+				"y": 22,
+				"readonly": false 
+			},
+			"size": {
+				"width": 373,
+				"height": 308,
+				"readonly": false
+			}
+		},
+		"area": "game"
+	},
+	{
+		"type": "file",
+		"key_name": "startBg",
+		"key_value": "assets/startBg.jpg",
+		"key_length": 1,
+		"key_title": "游戏背景图",
+		"describe": "游戏背景图",
+		"group": "user",
+		"resource": "",
+		"conditions": {
+			"accept": ".jpg, .jpeg, .png, .gif"
+		},
+		"attributes":{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"readonly": true 
+			},
+			"size": {
+				"width": 480,
+				"height": 800,
+				"readonly": true
+			}
+		},
+		"area": "game"
+	},
+	{
+		"type": "file",
+		"key_name": "Map",
+		"key_value": "assets/Map.jpg",
+		"key_length": 1,
+		"key_title": "游戏背景图",
+		"describe": "游戏背景图",
+		"group": "user",
+		"resource": "",
+		"conditions": {
+			"accept": ".jpg, .jpeg, .png, .gif"
+		},
+		"attributes":{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"readonly": true 
+			},
+			"size": {
+				"width": 480,
+				"height": 800,
+				"readonly": true
+			}
+		},
+		"area": "game"
+	},
+	{
+		"type": "file",
+		"key_name": "car_1",
+		"key_value": "assets/car_1.png",
+		"key_length": 1,
+		"key_title": "游戏左边角色图",
+		"describe": "游戏左边角色图",
+		"group": "user",
+		"resource": "",
+		"conditions": {
+			"accept": ".jpg, .jpeg, .png, .gif"
+		},
+		"attributes":{
+			"position": {
+				"x": 0,
+				"y": 500,
+				"readonly": true 
+			},
+			"size": {
+				"width": 120,
+				"height": 100,
+				"readonly": false
+			}
+		},
+		"area": "game"
+	},
+	{
+		"type": "file",
+		"key_name": "car_1_b",
+		"key_value": "assets/car_1_b.png",
+		"key_length": 1,
+		"key_title": "游戏左边角色与拾取物碰撞时图",
+		"describe": "游戏左边角色与拾取物碰撞时图",
+		"group": "user",
+		"resource": "",
+		"conditions": {
+			"accept": ".jpg, .jpeg, .png, .gif"
+		},
+		"attributes":{
+			"position": {
+				"x": 0,
+				"y": 500,
+				"readonly": true 
+			},
+			"size": {
+				"width": 120,
+				"height": 100,
+				"readonly": false
+			}
+		},
+		"area": "game"
+	},
+	{
+		"type": "file",
+		"key_name": "car_2",
+		"key_value": "assets/car_2.png",
+		"key_length": 1,
+		"key_title": "游戏右边角色图",
+		"describe": "游戏右边角色图",
+		"group": "user",
+		"resource": "",
+		"conditions": {
+			"accept": ".jpg, .jpeg, .png, .gif"
+		},
+		"attributes":{
+			"position": {
+				"x": 360,
+				"y": 500,
+				"readonly": true 
+			},
+			"size": {
+				"width": 120,
+				"height": 100,
+				"readonly": false
+			}
+		},
+		"area": "game"
+	},
+	{
+		"type": "file",
+		"key_name": "car_2_b",
+		"key_value": "assets/car_2_b.png",
+		"key_length": 1,
+		"key_title": "游戏右边角色与拾取物碰撞时图",
+		"describe": "游戏右边角色与拾取物碰撞时图",
+		"group": "user",
+		"resource": "",
+		"conditions": {
+			"accept": ".jpg, .jpeg, .png, .gif"
+		},
+		"attributes":{
+			"position": {
+				"x": 360,
+				"y": 500,
+				"readonly": true 
+			},
+			"size": {
+				"width": 120,
+				"height": 100,
+				"readonly": false
+			}
+		},
+		"area": "game"
+	},
+	{
+		"type": "file",
+		"key_name": "za_1",
+		"key_value": "assets/za_1.png",
+		"key_length": 1,
+		"key_title": "水果",
+		"describe": "水果，拾取后游戏分数+1",
+		"group": "user",
+		"resource": "",
+		"conditions": {
+			"accept": ".jpg, .jpeg, .png, .gif"
+		},
+		"attributes":{
+			"position": {
+				"x": 32,
+				"y": 260,
+				"readonly": true 
+			},
+			"size": {
+				"width": 65,
+				"height": 65,
+				"readonly": false
+			}
+		},
+		"area": "game"
+	},
+	{
+		"type": "file",
+		"key_name": "za_0",
+		"key_value": "assets/za_0.png",
+		"key_length": 1,
+		"key_title": "炸弹",
+		"describe": "炸弹，拾取后游戏结束",
+		"group": "user",
+		"resource": "",
+		"conditions": {
+			"accept": ".jpg, .jpeg, .png, .gif"
+		},
+		"attributes":{
+			"position": {
+				"x": 266,
+				"y": 230,
+				"readonly": true 
+			},
+			"size": {
+				"width": 65,
+				"height": 65,
+				"readonly": false
+			}
+		},
+		"area": "game"
+	},
+	{
+		"type": "file",
+		"key_name": "top_bar",
+		"key_value": "assets/top_bar.png",
+		"key_length": 1,
+		"key_title": "顶部说明得分情况的图片",
+		"describe": "顶部说明得分情况的图片",
+		"group": "user",
+		"resource": "",
+		"conditions": {
+			"accept": ".jpg, .jpeg, .png, .gif"
+		},
+		"attributes":{
+			"position": {
+				"x": 0,
+				"y": 0,
+				"readonly": false 
+			},
+			"size": {
+				"width": 480,
+				"height": 81,
+				"readonly": false
+			}
+		},
+		"area": "game"
+	},
+	{
+		"type": "text",
+		"key_name": "score_level",
+		"key_value": [
+			{"level":10, "desc": "你是逗比！"},
+			{"level":20, "desc": "你是菜鸟！"},
+			{"level":30, "desc": "你是普通！"},
+			{"level":40, "desc": "你是高手！"}
+		],
+		"key_length": 4,
+		"key_title": "分数级别",
+		"describe": "显示分数级别的时候出现",
+		"group": "admin",
+		"conditions":"",
+		"resource":"",
+		"area":"game"
+	}],
+	"scenes":[
+		{
+			"name": "loadingPage",
+			"description": "加载页面",
+			"keys": ["logo", "loadtext", "loading"]
+		},
+		{
+			"name": "startPage",
+			"description": "开始页",
+			"keys": ["startBg", "gameTitle", "playBtn"]
+		},
+		{
+			"name": "runningPage",
+			"description": "游戏进行页",
+			"keys": ["Map", "top_bar", "za_0", "za_1", ["car_1", "car_1_b"], ["car_2", "car_2_b"]]
+		}
+	],
+	"stage":{
+		"width": 480,
+		"height": 800
+	}
+}

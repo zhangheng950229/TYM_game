@@ -1,0 +1,452 @@
+{
+	"items":[
+		{
+			"type": "file",
+			"key_name": "logo",
+			"key_value": "http://cdn.tuyoumi.com/FE/img/loading/tuyoumi-logo.jpg",
+			"key_title": "TYMlogo",
+			"key_length": 1,
+			"describe": "TYMlogo",
+			"group": "user",
+			"area": "game",
+			"constrains": "",
+			"attributes": {
+				"position": {
+					"x": 236,
+					"y": 850,
+					"readonly": true
+				},
+				"size": {
+					"width": 168,
+					"height": 79,
+					"readonly": true
+				}
+			}
+		},
+		{
+			"type": "file",
+			"key_name": "loading",
+			"key_value": "http://cdn.tuyoumi.com/FE/img/loading/tuyoumi-loading.gif",
+			"key_title": "loading图",
+			"key_length": 1,
+			"describe": "loading图",
+			"group": "user",
+			"area": "game",
+			"constrains": "",
+			"attributes": {
+				"position": {
+					"x": 246,
+					"y": 300,
+					"readonly": true
+				},
+				"size": {
+					"width": 152,
+					"height": 257,
+					"readonly": true
+				}
+			}
+		},
+		{
+			"type": "text",
+			"key_name": "loadtext",
+			"key_value": "游戏加载中...",
+			"key_length": 1,            
+			"key_title": "加载进度",
+			"describe": "加载进度",
+			"group": "admin",
+			"area": "game",
+			"constrains": "",
+			"attributes": {
+				"position": {
+					"x": 258,
+					"y": 560,
+					"readonly": true
+				},
+				"font": {
+					"fontSize": 14,
+					"fontColor": "#363636",
+					"fontFamily": "",
+					"readonly": true
+				}
+			}
+		},
+		{
+			"type": "text",
+			"key_name": "game_name",
+			"key_value": "飞得更高",
+			"key_length": 1,
+			"key_title": "游戏名称",
+			"describe": "游戏名称",            
+			"group": "user",
+			"area": "game",
+			"conditions": {
+				"size": 10
+			}
+		},
+		{
+			"type": "text",
+			"key_name": "score_level",
+			"key_value": [
+					{"level":10, "desc": "你是逗比！"},
+					{"level":20, "desc": "你是菜鸟！"},
+					{"level":30, "desc": "你是普通！"},
+					{"level":50, "desc": "你是高手！"}
+				],
+			"key_length": 4,
+			"key_title": "分数级别",
+			"describe": "显示分数级别的时候出现",
+			"group": "admin",
+			"conditions":"",
+			"area":"game"
+		},
+		{
+			"type": "file",
+			"key_name": "startTitle",
+			"key_value": "assets/startTitle.png",
+			"key_length": 1,
+			"key_title": "游戏标题",
+			"describe": "游戏标题",
+			"group": "user",
+			"uint": "",
+			"resource": "",
+			"area": "game",
+			"constrains": {},
+			"conditions": {
+				"accept": ".jpg, .jpeg, .png, .gif"
+			},
+			"attributes": {
+				"position": {
+					"x": 52,
+					"y": 138,
+					"readonly": false
+				},
+				"size": {
+					"width": 536,
+					"height": 206,
+					"readonly": false
+				},
+				"other": {
+					"rotate": {
+						"deg": 0,
+						"readonly": false
+					}
+				}
+			}
+		},
+		{
+			"type": "file",
+			"key_name": "startBtn",
+			"key_value": "assets/startBtn.png",
+			"key_length": 1,
+			"key_title": "开始按钮",
+			"describe": "开始按钮",
+			"group": "user",
+			"uint": "",
+			"resource": "",
+			"area": "game",
+			"constrains": {},
+			"conditions": {
+				"accept": ".jpg, .jpeg, .png, .gif"
+			},
+			"attributes": {
+				"position": {
+					"x": 207,
+					"y": 520,
+					"readonly": false
+				},
+				"size": {
+					"width": 226,
+					"height": 171,
+					"readonly": false
+				},
+				"other": {
+					"rotate": {
+						"deg": 0,
+						"readonly": false
+					}
+				}
+			}
+		},
+		{
+			"type": "file",
+			"key_name": "startBg",
+			"key_value": "assets/startBg.jpg",
+			"key_length": 1,
+			"key_title": "开始游戏背景",
+			"describe": "开始游戏背景",
+			"group": "user",
+			"uint": "",
+			"resource": "",
+			"area": "game",
+			"constrains": {},
+			"conditions": {
+				"accept": ".jpg, .jpeg, .png, .gif"
+			},
+			"attributes": {
+				"position": {
+					"x": 0,
+					"y": 0,
+					"readonly": true
+				},
+				"size": {
+					"width": 640,
+					"height": 1008,
+					"readonly": true
+				}
+			}
+		},
+		{
+			"type": "file",
+			"key_name": "gameBg",
+			"key_value": "assets/gameBg.jpg",
+			"key_length": 1,
+			"key_title": "游戏进行背景",
+			"describe": "游戏进行背景",
+			"group": "user",
+			"uint": "",
+			"resource": "",
+			"area": "game",
+			"constrains": {},
+			"conditions": {
+				"accept": ".jpg, .jpeg, .png, .gif"
+			},
+			"attributes": {
+				"position": {
+					"x": 0,
+					"y": 0,
+					"readonly": true
+				},
+				"size": {
+					"width": 640,
+					"height": 1008,
+					"readonly": true
+				}
+			}
+		},
+		{
+			"type": "file",
+			"key_name": "introduction",
+			"key_value": "assets/introduction.png",
+			"key_length": 1,
+			"key_title": "游戏玩法介绍",
+			"describe": "游戏玩法介绍",
+			"group": "user",
+			"uint": "",
+			"resource": "",
+			"area": "game",
+			"constrains": {},
+			"conditions": {
+				"accept": ".jpg, .jpeg, .png, .gif"
+			},
+			"attributes": {
+				"position": {
+					"x": 0,
+					"y": 0,
+					"readonly": true
+				},
+				"size": {
+					"width": 640,
+					"height": 1008,
+					"readonly": true
+				}
+			}
+		},
+		{
+			"type": "file",
+			"key_name": "juese",
+			"key_value": "assets/juese.png",
+			"key_length": 1,
+			"key_title": "游戏主角",
+			"describe": "游戏主角",
+			"group": "user",
+			"uint": "",
+			"resource": "",
+			"area": "game",
+			"constrains": {},
+			"conditions": {
+				"accept": ".jpg, .jpeg, .png, .gif"
+			},
+			"attributes": {
+				"position": {
+					"x": 300,
+					"y": 420,
+					"readonly": true
+				},
+				"size": {
+					"width": 40,
+					"height": 33,
+					"readonly": true
+				}
+			}
+		},
+		{
+			"type": "file",
+			"key_name": "clouds01",
+			"key_value": "assets/clouds01.png",
+			"key_length": 1,
+			"key_title": "障碍物形态1",
+			"describe": "障碍物形态1",
+			"group": "user",
+			"uint": "",
+			"resource": "",
+			"area": "game",
+			"constrains": {},
+			"conditions": {
+				"accept": ".jpg, .jpeg, .png, .gif"
+			},
+			"attributes": {
+				"position": {
+					"x": 0,
+					"y": 200,
+					"readonly": true
+				},
+				"size": {
+					"width": 386,
+					"height": 70,
+					"readonly": true
+				}
+			}
+		},
+		{
+			"type": "file",
+			"key_name": "clouds02",
+			"key_value": "assets/clouds02.png",
+			"key_length": 1,
+			"key_title": "障碍物形态2",
+			"describe": "障碍物形态2",
+			"group": "user",
+			"uint": "",
+			"resource": "",
+			"area": "game",
+			"constrains": {},
+			"conditions": {
+				"accept": ".jpg, .jpeg, .png, .gif"
+			},
+			"attributes": {
+				"position": {
+					"x": 460,
+					"y": 330,
+					"readonly": true
+				},
+				"size": {
+					"width": 80,
+					"height": 60,
+					"readonly": true
+				}
+			}
+		},
+		{
+			"type": "color",
+			"key_name": "barColor",
+			"key_value": "#ffffff",
+			"key_title": "障碍物的背景色",
+			"describe": "障碍物的背景色",
+			"key_length": 1,
+			"group": "user",
+			"conditions": {
+				"size": 10
+			},
+			"attributes": {
+				"position": {
+					"x": 0,
+					"y": 0,
+					"readonly": true
+				},
+				"size": {
+					"width": 640,
+					"height": 1008,
+					"readonly": true
+				}
+			},
+			"area": "game"
+		},
+		{
+			"type": "color",
+			"key_name": "scoreBarColor",
+			"key_value": "#ffffff",
+			"key_title": "得分板背景色",
+			"describe": "得分板背景色",
+			"key_length": 1,
+			"group": "user",
+			"conditions": {
+				"size": 10
+			},
+			"attributes": {
+				"position": {
+					"x": 255,
+					"y": 60,
+					"readonly": false
+				},
+				"size": {
+					"width": 130,
+					"height": 80,
+					"readonly": false
+				},
+				"other": {
+					"rotate": {
+						"deg": 0,
+						"readonly": false
+					}
+				}
+			},
+			"area": "game"
+		},
+		{
+			"type": "text",
+			"key_name": "scoreText",
+			"key_value": "xx分",
+			"key_length": 1,
+			"key_title": "游戏得分",
+			"describe": "游戏得分",
+			"group": "user",
+			"conditions": {
+				"size": 15,
+				"required": false
+			},
+			"attributes": {
+				"font": {
+					"fontSize": 60,
+					"fontColor": "0",
+					"textAlign": "center",
+					"readonly": false,
+					"ignore": "textAlign"
+				},
+				"position": {
+					"x": 260,
+					"y": 70,
+					"readonly": false
+				},
+				"size": {
+					"width": 120,
+					"height": 60,
+					"readonly": false
+				}
+			},
+			"area": "game"
+		}
+	],
+	"scenes": [{
+		"name": "loadingPage",
+		"description": "加载页面",
+		"keys": ["logo", "loading", "loadtext"]
+	},
+	{
+		"name": "startPage",
+		"description": "开始页",
+		"keys": ["startBg", "startTitle", "startBtn"]
+	},
+	{
+		"name": "rulePage",
+		"description": "玩法介绍页",
+		"keys": ["gameBg", "introduction", "scoreBarColor", "scoreText"]
+	},
+	{
+		"name": "gamePage",
+		"description": "游戏进行页",
+		"keys": ["gameBg", "juese", "clouds01", "clouds02", "scoreBarColor", "scoreText"]
+	}],
+	"stage": {
+		"width": 640,
+		"height": 1008
+	}
+}
